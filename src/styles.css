@@ -3,25 +3,89 @@ body {
 
     display: flex;
     flex-direction: column;
+
+    margin: 0;
 }
 
 header {
     align-self: center;
-    /* TODO space the buttons evenly at the top */
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 100vw;
+    margin: 5px 10px;
+}
+
+nav>button {
+    border: none;
+    background: none;
+
+    cursor: pointer;
+
+    font-size: 2.75em;
 }
 
 #logo {
     align-self: center;
-    /* TODO 2 lines spanning the top and bottom of the logo section */
+
+    display: flex;
+    align-items: center;
+
+
+    width: 100%;
+}
+
+#logo::before,
+#logo::after {
+    content: '';
+    /* Height of the line */
+    height: 5px;
+    background-color: black;
+    flex: 1;
+}
+
+/* creates a second line */
+#logo::before {
+    /* second number adjusts the distance of the lines */
+    box-shadow: 0 20px 0 black;
+}
+
+#logo::after {
+    box-shadow: 0 20px 0 black;
 }
 
 #logo img {
-    width: 250px;
-    height: 250px;
+    width: auto;
+    height: 175px;
+
+    margin: 0 20px;
+
 }
 
 #content {
     align-self: center;
     margin-left: 200px;
     margin-right: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 600px;
+}
+
+#description *,
+#hours * {
+    justify-self: center;
+}
+
+#footer {
+    background-color: white;
+
+    width: 100%;
+    margin: 0;
+    text-align: center;
 }
