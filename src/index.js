@@ -1,4 +1,6 @@
 import "./styles.css";
-import { home } from "./home.js";
+import { addHomeHTML } from "./home.js";
+
+addHomeHTML();
 
 console.log("Hello, world!");
