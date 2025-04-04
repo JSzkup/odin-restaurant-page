@@ -22,7 +22,6 @@ export function addHomeHTML() {
     const hoursHeader = document.createElement("h2");
     hoursHeader.textContent = "Hours";
 
-    // TODO bulletpoints are not aligned on left
     const hoursList = document.createElement("ul");
     const hoursListItems = [
         "Monday: 5 PM - 10 PM",

@@ -2,12 +2,11 @@ export function addMenuHTML() {
     const content = document.querySelector("#content");
 
     const menuTitle = document.createElement("h1");
+    menuTitle.id = "menu-title";
     menuTitle.textContent = "Dinner Menu";
 
     const menuSubtitle = document.createElement("h2");
     menuSubtitle.textContent = "Modern American Cuisine | Seasonal | Elevated Comfort Food";
-
-    // TODO use css to make a long thin line, maybe make in between every flexbox item in body
 
     const startersSubtitle = document.createElement("h2");
     startersSubtitle.textContent = "Starters";
