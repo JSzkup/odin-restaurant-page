@@ -1,3 +1,3 @@
-function addAboutHTML() {
+export function addAboutHTML() {
 
 }

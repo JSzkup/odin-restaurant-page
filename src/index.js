@@ -3,19 +3,15 @@ import { addHomeHTML } from "./home.js";
 import { addMenuHTML } from "./menu.js";
 import { addAboutHTML } from "./about.js";
 
-addHomeHTML();
-// addMenuHTML();
-// addAboutHTML();
-
 function clearContent() {
     const content = document.querySelector("#content");
     content.innerHTML = "";
 }
 
 function addNavEvents() {
-    const homeButton = document.querySelector("#home");
-    const menuButton = document.querySelector("#menu");
-    const aboutButton = document.querySelector("#about");
+    const homeButton = document.querySelector("#home-btn");
+    const menuButton = document.querySelector("#menu-btn");
+    const aboutButton = document.querySelector("#about-btn");
 
     homeButton.addEventListener("click", () => {
         clearContent();
@@ -33,4 +29,6 @@ function addNavEvents() {
     });
 }
 
+addHomeHTML();
+addNavEvents();
 console.log("Hello, world!");
