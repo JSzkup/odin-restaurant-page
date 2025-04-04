@@ -2,7 +2,7 @@ export function addMenuHTML() {
     const content = document.querySelector("#content");
 
     const menuTitle = document.createElement("h1");
-    menuTitle.textContent = "THE GILDED FORK - DINNER MENU";
+    menuTitle.textContent = "Dinner Menu";
 
     const menuSubtitle = document.createElement("h2");
     menuSubtitle.textContent = "Modern American Cuisine | Seasonal | Elevated Comfort Food";

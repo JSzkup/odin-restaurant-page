@@ -6,7 +6,7 @@ export function addHomeHTML() {
     descriptionDIV.id = "description";
 
     const descriptionHeader = document.createElement("h2");
-    descriptionHeader.textContent = "Our Mission";
+    descriptionHeader.textContent = "What We Offer";
 
     const descriptionParagraph = document.createElement("p");
     descriptionParagraph.textContent = `Modern American cuisine with a focus on seasonal ingredients and elevated comfort food. Gourmet
@@ -22,6 +22,7 @@ export function addHomeHTML() {
     const hoursHeader = document.createElement("h2");
     hoursHeader.textContent = "Hours";
 
+    // TODO bulletpoints are not aligned on left
     const hoursList = document.createElement("ul");
     const hoursListItems = [
         "Monday: 5 PM - 10 PM",

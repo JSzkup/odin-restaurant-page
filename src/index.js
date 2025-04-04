@@ -31,4 +31,3 @@ function addNavEvents() {
 
 addHomeHTML();
 addNavEvents();
-console.log("Hello, world!");

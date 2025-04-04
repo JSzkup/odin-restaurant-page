@@ -1,5 +1,6 @@
 body {
-    background-color: #eedfc9;
+    /* background-color: #eedfc9; */
+    background: linear-gradient(to bottom, #fefcea 3%, #eedfc9 63%);
 
     display: flex;
     flex-direction: column;
@@ -67,6 +68,13 @@ nav>button {
 
 }
 
+#about-img {
+    width: auto;
+    height: 350px;
+
+    margin-right: 20px;
+}
+
 #content {
     display: flex;
     flex-direction: column;
@@ -82,6 +90,14 @@ nav>button {
     justify-self: center;
 }
 
+#about {
+    display: flex;
+
+    justify-content: center;
+
+    align-self: center;
+}
+
 #footer {
     background-color: white;
 
@@ -90,3 +106,5 @@ nav>button {
     margin-top: auto;
     text-align: center;
 }
+
+/* TODO change bullets to dashes */
